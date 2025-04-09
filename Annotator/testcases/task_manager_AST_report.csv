@@ -1,0 +1,14 @@
+File,Variable/Function,Type Hint
+testcases/task_manager.py,TASKS_FILE,str
+testcases/task_manager.py,save_tasks (arg: tasks),Missing Type Hint
+testcases/task_manager.py,add_task (arg: description),Missing Type Hint
+testcases/task_manager.py,add_task (arg: due_date),Missing Type Hint
+testcases/task_manager.py,add_task (arg: category),Missing Type Hint
+testcases/task_manager.py,flush_task (arg: task_id),Missing Type Hint
+testcases/task_manager.py,tasks,Unknown
+testcases/task_manager.py,new_task,Dict[str : Unknown]
+testcases/task_manager.py,tasks,Unknown
+testcases/task_manager.py,table,Unknown
+testcases/task_manager.py,tasks,Unknown
+testcases/task_manager.py,tasks,Unknown
+testcases/task_manager.py,tasks,Unknown

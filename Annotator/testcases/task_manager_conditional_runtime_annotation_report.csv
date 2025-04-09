@@ -1,0 +1,13 @@
+Variable Name,Inferred Type
+json,Any
+os,Any
+datetime,function
+Any,function
+TASKS_FILE,str
+load_tasks,function
+save_tasks,function
+add_task,function
+list_tasks,function
+flush_task,function
+flush_all_tasks,function
+delete_all_tasks,function

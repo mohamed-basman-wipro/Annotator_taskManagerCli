@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: annotation_tool
+Version: 0.1
+Summary: Annotation Tool for AST, Conditional, Variable, and Dynamic (RightTyper) Analysis
+Author-email: Mohamed Basman <mohamedbasman.m@gmail.com>
+Requires-Python: >=3.6

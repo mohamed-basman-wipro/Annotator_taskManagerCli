@@ -1,0 +1,40 @@
+version: '3'
+
+tasks:
+  run_ast_annotator:
+    cmds:
+      - echo "🔍 Running AST Annotator..."
+      - python3.12 AST_Annotator.py $(find testcases -name "*.py")
+
+  run_conditional_annotator:
+    cmds:
+      - echo "🔎 Running Conditional Annotator..."
+      - python3.12 conditional_annotator.py $(find testcases -name "*.py")
+
+  run_variable_annotator:
+    cmds:
+      - echo "📘 Running Variable Annotator..."
+      - python3 variable_annotator.py $(find testcases -name "*.py")
+
+  run_right_typer:
+    cmds:
+      - echo "📦 Running RightTyper dynamically..."
+      - |
+        for file in $(find testcases -name "*.py"); do
+          echo "🔁 Running righttyper.py on $file"
+          python3.12 righttyper.py "$file"
+        done
+    interactive: true
+
+  generate_csv:
+    cmds:
+      - echo "🧩 Generating final combined CSV report..."
+      - python3.12 generate_csv.py
+
+  run_all:
+    cmds:
+      - task: run_variable_annotator
+      - task: run_ast_annotator
+      - task: run_conditional_annotator
+      - task: run_right_typer
+      - task: generate_csv

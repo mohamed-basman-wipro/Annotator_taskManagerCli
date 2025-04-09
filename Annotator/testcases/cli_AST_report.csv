@@ -1,0 +1,9 @@
+File,Variable/Function,Type Hint
+testcases/cli.py,choice,Unknown
+testcases/cli.py,description,Unknown
+testcases/cli.py,due_date,Unknown
+testcases/cli.py,category,Unknown
+testcases/cli.py,tasks_table,Unknown
+testcases/cli.py,sub_choice,Unknown
+testcases/cli.py,task_id,Unknown
+testcases/cli.py,proceed,Unknown

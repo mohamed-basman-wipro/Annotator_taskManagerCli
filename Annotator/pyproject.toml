@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "annotation_tool"
+version = "0.1"
+authors = [{ name = "Mohamed Basman", email = "mohamedbasman.m@gmail.com" }]
+description = "Annotation Tool for AST, Conditional, Variable, and Dynamic (RightTyper) Analysis"
+requires-python = ">=3.6"
+dependencies = []
+
+[tool.setuptools]
+py-modules = [
+    "AST_Annotator",
+    "conditional_annotator",
+    "generate_csv",
+    "righttyper",
+    "variable_annotator",
+    "cli",
+    "task_manager",
+    "run_pipeline"
+]
+
+[project.scripts]
+annotator-run = "run_pipeline:main"

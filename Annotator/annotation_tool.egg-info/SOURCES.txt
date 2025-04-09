@@ -1,0 +1,15 @@
+AST_Annotator.py
+README.md
+cli.py
+conditional_annotator.py
+generate_csv.py
+pyproject.toml
+righttyper.py
+run_pipeline.py
+task_manager.py
+variable_annotator.py
+annotation_tool.egg-info/PKG-INFO
+annotation_tool.egg-info/SOURCES.txt
+annotation_tool.egg-info/dependency_links.txt
+annotation_tool.egg-info/entry_points.txt
+annotation_tool.egg-info/top_level.txt

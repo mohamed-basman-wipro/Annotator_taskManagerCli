@@ -1,0 +1,53 @@
+testcases/cli.py:
+==========================================
+
+main
+
+  # Inferred type signature
+- def main() -> None:
++ def main() -> None:
+
+/home/training/Annotator/task_manager.py:
+==========================================
+
+add_task
+
+  # Inferred type signature
+- def add_task(description, due_date, category) -> str:
++ def add_task(description: str, due_date: str, category: str) -> str:
+
+load_tasks
+
+  # Inferred type signature
+- def load_tasks() -> Any:
++ def load_tasks() -> list[dict[str, Union[int, str]]]:
+
+save_tasks
+
+  # Inferred type signature
+- def save_tasks(tasks) -> None:
++ def save_tasks(tasks: Union[list[Any], list[dict[str, Union[int, str]]]]) -> None:
+
+list_tasks
+
+  # Inferred type signature
+- def list_tasks() -> str:
++ def list_tasks() -> list[list[Union[int, str]]]:
+
+flush_task
+
+  # Inferred type signature
+- def flush_task(task_id) -> str:
++ def flush_task(task_id: int) -> str:
+
+flush_all_tasks
+
+  # Inferred type signature
+- def flush_all_tasks() -> str:
++ def flush_all_tasks() -> str:
+
+delete_all_tasks
+
+  # Inferred type signature
+- def delete_all_tasks() -> str:
++ def delete_all_tasks() -> str:

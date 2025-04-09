@@ -1,0 +1,23 @@
+Filename,Function,Variable Name,Inferred Type
+testcases/cli.py,main,category,str
+testcases/cli.py,main,choice,str
+testcases/cli.py,main,description,str
+testcases/cli.py,main,due_date,str
+testcases/cli.py,main,proceed,str
+testcases/cli.py,main,sub_choice,str
+testcases/cli.py,main,task_id,int
+testcases/cli.py,main,tasks_table,str
+testcases/task_manager.py,add_task,category,function_param
+testcases/task_manager.py,add_task,description,function_param
+testcases/task_manager.py,add_task,due_date,function_param
+testcases/task_manager.py,add_task,new_task,dict
+testcases/task_manager.py,add_task,tasks,list
+testcases/task_manager.py,flush_all_tasks,tasks,list
+testcases/task_manager.py,flush_task,i,int
+testcases/task_manager.py,flush_task,task,dict
+testcases/task_manager.py,flush_task,task_id,function_param
+testcases/task_manager.py,flush_task,tasks,list
+testcases/task_manager.py,global,TASKS_FILE,str
+testcases/task_manager.py,list_tasks,table,list
+testcases/task_manager.py,list_tasks,tasks,list
+testcases/task_manager.py,save_tasks,tasks,function_param

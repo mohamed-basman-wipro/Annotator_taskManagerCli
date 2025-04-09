@@ -1,0 +1,76 @@
+SL_No,Module,Function,Function_Return_Type,Function_Arguments,Function_Argument_Type,Annotator_Type,Variable_Name,Variable_Type
+1,cli.py,main,None,-,-,RightTyper,-,-
+2,cli.py,add_task,-,description,str,RightTyper,-,-
+3,cli.py,add_task,-,due_date,str,RightTyper,-,-
+4,cli.py,add_task,-,category,str,RightTyper,-,-
+5,cli.py,add_task,str,-,-,RightTyper,-,-
+6,cli.py,load_tasks,"list[dict[str, Union[int, str]]]",-,-,RightTyper,-,-
+7,cli.py,save_tasks,-,tasks,Union[list[Any],RightTyper,-,-
+8,cli.py,save_tasks,None,-,-,RightTyper,-,-
+9,cli.py,list_tasks,"list[list[Union[int, str]]]",-,-,RightTyper,-,-
+10,cli.py,flush_task,-,task_id,int,RightTyper,-,-
+11,cli.py,flush_task,str,-,-,RightTyper,-,-
+12,cli.py,flush_all_tasks,str,-,-,RightTyper,-,-
+13,cli.py,delete_all_tasks,str,-,-,RightTyper,-,-
+14,cli.py,main,-,-,-,Variable_Annotator,category,str
+15,cli.py,main,-,-,-,Variable_Annotator,choice,str
+16,cli.py,main,-,-,-,Variable_Annotator,description,str
+17,cli.py,main,-,-,-,Variable_Annotator,due_date,str
+18,cli.py,main,-,-,-,Variable_Annotator,proceed,str
+19,cli.py,main,-,-,-,Variable_Annotator,sub_choice,str
+20,cli.py,main,-,-,-,Variable_Annotator,task_id,int
+21,cli.py,main,-,-,-,Variable_Annotator,tasks_table,str
+22,task_manager.py,add_task,-,-,-,Variable_Annotator,category,function_param
+23,task_manager.py,add_task,-,-,-,Variable_Annotator,description,function_param
+24,task_manager.py,add_task,-,-,-,Variable_Annotator,due_date,function_param
+25,task_manager.py,add_task,-,-,-,Variable_Annotator,new_task,dict
+26,task_manager.py,add_task,-,-,-,Variable_Annotator,tasks,list
+27,task_manager.py,flush_all_tasks,-,-,-,Variable_Annotator,tasks,list
+28,task_manager.py,flush_task,-,-,-,Variable_Annotator,i,int
+29,task_manager.py,flush_task,-,-,-,Variable_Annotator,task,dict
+30,task_manager.py,flush_task,-,-,-,Variable_Annotator,task_id,function_param
+31,task_manager.py,flush_task,-,-,-,Variable_Annotator,tasks,list
+32,task_manager.py,global,-,-,-,Variable_Annotator,TASKS_FILE,str
+33,task_manager.py,list_tasks,-,-,-,Variable_Annotator,table,list
+34,task_manager.py,list_tasks,-,-,-,Variable_Annotator,tasks,list
+35,task_manager.py,save_tasks,-,-,-,Variable_Annotator,tasks,function_param
+36,cli.py,-,-,-,-,AST,choice,Unknown
+37,cli.py,-,-,-,-,AST,description,Unknown
+38,cli.py,-,-,-,-,AST,due_date,Unknown
+39,cli.py,-,-,-,-,AST,category,Unknown
+40,cli.py,-,-,-,-,AST,tasks_table,Unknown
+41,cli.py,-,-,-,-,AST,sub_choice,Unknown
+42,cli.py,-,-,-,-,AST,task_id,Unknown
+43,cli.py,-,-,-,-,AST,proceed,Unknown
+44,task_manager.py,-,-,-,-,AST,TASKS_FILE,str
+45,task_manager.py,save_tasks,-,tasks,Missing Type Hint,AST,-,-
+46,task_manager.py,add_task,-,description,Missing Type Hint,AST,-,-
+47,task_manager.py,add_task,-,due_date,Missing Type Hint,AST,-,-
+48,task_manager.py,add_task,-,category,Missing Type Hint,AST,-,-
+49,task_manager.py,flush_task,-,task_id,Missing Type Hint,AST,-,-
+50,task_manager.py,-,-,-,-,AST,tasks,Unknown
+51,task_manager.py,-,-,-,-,AST,new_task,Dict[str : Unknown]
+52,task_manager.py,-,-,-,-,AST,tasks,Unknown
+53,task_manager.py,-,-,-,-,AST,table,Unknown
+54,task_manager.py,-,-,-,-,AST,tasks,Unknown
+55,task_manager.py,-,-,-,-,AST,tasks,Unknown
+56,task_manager.py,-,-,-,-,AST,tasks,Unknown
+57,cli.py,add_task,-,-,-,Conditional,add_task,function
+58,cli.py,list_tasks,-,-,-,Conditional,list_tasks,function
+59,cli.py,flush_task,-,-,-,Conditional,flush_task,function
+60,cli.py,flush_all_tasks,-,-,-,Conditional,flush_all_tasks,function
+61,cli.py,delete_all_tasks,-,-,-,Conditional,delete_all_tasks,function
+62,cli.py,tabulate,-,-,-,Conditional,tabulate,function
+63,cli.py,main,-,-,-,Conditional,main,function
+64,task_manager.py,-,-,-,-,Conditional,json,Any
+65,task_manager.py,-,-,-,-,Conditional,os,Any
+66,task_manager.py,-,-,-,-,Conditional,datetime,function
+67,task_manager.py,-,-,-,-,Conditional,Any,function
+68,task_manager.py,-,-,-,-,Conditional,TASKS_FILE,str
+69,task_manager.py,load_tasks,-,-,-,Conditional,load_tasks,function
+70,task_manager.py,save_tasks,-,-,-,Conditional,save_tasks,function
+71,task_manager.py,add_task,-,-,-,Conditional,add_task,function
+72,task_manager.py,list_tasks,-,-,-,Conditional,list_tasks,function
+73,task_manager.py,flush_task,-,-,-,Conditional,flush_task,function
+74,task_manager.py,flush_all_tasks,-,-,-,Conditional,flush_all_tasks,function
+75,task_manager.py,delete_all_tasks,-,-,-,Conditional,delete_all_tasks,function

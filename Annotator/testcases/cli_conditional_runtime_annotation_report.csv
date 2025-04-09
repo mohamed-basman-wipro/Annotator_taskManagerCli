@@ -1,0 +1,8 @@
+Variable Name,Inferred Type
+add_task,function
+list_tasks,function
+flush_task,function
+flush_all_tasks,function
+delete_all_tasks,function
+tabulate,function
+main,function
